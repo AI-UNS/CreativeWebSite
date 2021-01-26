@@ -1,0 +1,62 @@
+.registr{
+    background: url('../../img/registr-bg.png') no-repeat center / cover;
+
+    &__title{
+        text-align: center;
+        padding-top: 225px;
+        color: $white;
+
+        h2{
+            position: relative;
+            text-transform: uppercase;
+            font-size: 38px;
+        }
+
+        img{
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%) translateX(-50%);
+            left: 50%;
+        }
+    }
+
+    &__form{
+        margin-top: 150px;
+        width: 100%;
+
+        &-main{
+            width: 100%;
+
+            input{
+                background: transparent;
+                border: 1px solid $white;
+                width: 33.3%;
+                padding: 20px;
+                margin: 0 14px;
+            }
+        }
+
+        &-message{
+            margin-top: 40px;
+            width: 100%;
+            
+            input{
+                background: transparent;
+                border: 1px solid $white;
+                width: 100%;
+                margin: 0 14px;
+                height: 150px;
+            }
+        }
+
+        button{
+            margin-top: 50px;
+            background: $blue;
+            padding: 20px 60px;
+            border: 0;
+            color: $white;
+            font-size: 24px;
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.statis{
+    height: 100vh;
+    background: url('../../img/statis-bg.png') no-repeat center / cover;
+    color: $white;
+
+    &__content{
+        width: 50%;
+        
+        h2{
+            font-size: 25px;
+            line-height: 36px;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 15px;
+            line-height: 24px;
+            margin: 45px 0 60px;
+        }
+
+        &-bar{
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 15px 20px;
+            background: $blue;
+            text-transform: uppercase;
+            margin: 12px 0;
+        }
+    }
+}
+

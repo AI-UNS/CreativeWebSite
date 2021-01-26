@@ -1,0 +1,48 @@
+.width-control{
+    display: block;
+    width: 50%;
+    // height: 100%;
+
+    img{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.work__block{
+    display: flex;
+}
+
+.work__content{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 110px 110px 210px;
+
+    span{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    
+    h2{
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 36px;
+    }
+}
+
+.work__content:first-child{
+    background: $darkGray;
+    color: $white;
+}
+.work__content:last-child{
+    background: $lightGray;
+}

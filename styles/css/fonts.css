@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: local('Myriad Pro Condensed Regular'), local('Myriad-Pro-Condensed-Regular'),
+        url('../../fonts/MyriadPro-Cond.woff2') format('woff2'),
+        url('../../fonts/MyriadPro-Cond.woff') format('woff'),
+        url('../../fonts/MyriadPro-Cond.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Office Regular'), local('Gotham-Office-Regular'),
+        url('../../fonts/GothamOffice-Regular.woff2') format('woff2'),
+        url('../../fonts/GothamOffice-Regular.woff') format('woff'),
+        url('../../fonts/GothamOffice-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
