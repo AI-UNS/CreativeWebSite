@@ -42,6 +42,13 @@ body {
         &__icon {
             object-fit: contain;
             box-shadow: 10px 10px 0 #ccbbcc;
+
+            @include media($xl) {
+                width: 50px;
+                height: 50px;
+                box-shadow: 5px 5px 0 #ccbbcc;
+
+            }
         }
 
 
@@ -56,10 +63,19 @@ body {
             display: flex;
             align-items: center;
 
+            @include media($xl) {
+                margin-right: 10px;
+                padding: 0 5px;
+            }
+
+
             a {
                 color: $white;
                 font-size: 20px;
 
+                @include media($xl) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -69,6 +85,11 @@ body {
 
         &__soc-link {
             margin-right: 30px;
+
+            @include media($xl) {
+                margin-right: 20px;
+
+            }
 
             i {
                 color: $white;
@@ -82,15 +103,23 @@ body {
     .header__title {
         height: 80%;
         text-transform: uppercase;
-        
-        h1{
+
+        h1 {
             font-size: 120px;
             color: $white;
+
+            @include media($xl) {
+                font-size: 100px;
+            }
         }
 
-        p{
+        p {
             font-size: 30px;
             color: $blue;
+
+            @include media($xl){
+               font-size: 25px;
+            }
         }
     }
 }

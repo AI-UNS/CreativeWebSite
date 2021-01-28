@@ -15,12 +15,18 @@
 
 .work__block{
     display: flex;
+    justify-content: space-between; //???
 }
 
 .work__content{
     display: flex;
     flex-direction: column;
     padding: 70px 110px 110px 210px;
+    
+    @include media($xl){
+        padding: 50px 90px 90px 150px;
+    }
+
 
     span{
         font-size: 13px;

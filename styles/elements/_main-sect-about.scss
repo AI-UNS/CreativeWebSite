@@ -5,15 +5,19 @@
 .about__title {
     padding-top: 100px;
     text-align: center;
-    
-    
+
+    @include media($xl) {
+        padding-top: 80px;
+    }
+
+
+
     h2 {
         position: relative;
         color: $white;
         font-size: 38px;
         line-height: 45px;
         text-transform: uppercase;
-        
         
         img {
             position: absolute;
@@ -25,31 +29,45 @@
 
 }
 
-.about__features{
+.about__features {
     margin-top: 140px;
     padding-bottom: 130px;
 
-    .feature{
+    .feature {
         padding: 0 22px;
         color: $white;
 
-        i{
+        i {
             font-size: 36px;
             padding: 66px;
             border-radius: 50%;
             background: $lightBlue;
+
+            @include media($xl) {
+                padding: 50px;
+            }
+
         }
-        
-        h3{
+
+        h3 {
             margin: 25px 0 35px 0;
             font-size: 18px;
             line-height: 36px;
+
+            @include media($xl) {
+                margin: 20px 0 30px 0;
+            }
         }
 
-        p{
+        p {
             font-size: 15px;
             text-align: center;
             line-height: 24px;
+
+            @include media($xl) {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
     }
 }
