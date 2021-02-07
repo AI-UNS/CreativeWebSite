@@ -6,7 +6,7 @@ $lightGray: #f3f3f3;
 
 $xl: 1200px;
 $lg: 992px;
-$md:768px;
+$md: 768px;
 $sm: 576px;
 
 @mixin media($size: $xl) {
@@ -27,6 +27,10 @@ $sm: 576px;
 
 }
 
+.d-block{
+    display: block;
+}
+
 .justify-content-start {
     justify-content: start;
 }
@@ -41,6 +45,10 @@ $sm: 576px;
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.justify-content-around{
+    justify-content: space-around;
 }
 
 .align-items-start {

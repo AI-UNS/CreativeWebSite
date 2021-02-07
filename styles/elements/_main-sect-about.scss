@@ -10,6 +10,10 @@
         padding-top: 80px;
     }
 
+    @include media($sm) {
+        padding-top: 40px;
+    }
+
 
 
     h2 {
@@ -18,12 +22,34 @@
         font-size: 38px;
         line-height: 45px;
         text-transform: uppercase;
-        
+
+        @include media($lg) {
+            font-size: 35px;
+        }
+
+        @include media($md){
+            font-size: 28px;
+        }
+
+        @include media($sm){
+            font-size: 20px;
+        }
+
+
+
+
+
         img {
             position: absolute;
             bottom: 50%;
             transform: translateY(50%) translateX(-50%);
             left: 50%;
+
+            @include media($lg) {
+                width: 150px;
+                height: 150px;
+            }
+
         }
     }
 
@@ -33,9 +59,30 @@
     margin-top: 140px;
     padding-bottom: 130px;
 
+    @include media($lg){
+        margin-top: 120px;
+    }
+
+    @include media($sm){
+        margin-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
+
     .feature {
         padding: 0 22px;
         color: $white;
+
+        @include media($md){
+            padding: 0 19px;
+        }
+
+        @include media($sm){
+            padding: 0 5px;
+        }
+
+
 
         i {
             font-size: 36px;
@@ -47,9 +94,25 @@
                 padding: 50px;
             }
 
+            @include media($lg) {
+                padding: 40px;
+            }
+
+            @include media($md){
+                padding: 30px;
+            }
+
+            @include media($sm){
+                padding: 20px;
+                font-size: 20px;
+            }
+
+
+
         }
 
         h3 {
+            text-align: center;
             margin: 25px 0 35px 0;
             font-size: 18px;
             line-height: 36px;
@@ -57,6 +120,26 @@
             @include media($xl) {
                 margin: 20px 0 30px 0;
             }
+
+            @include media($lg){
+                margin: 18px 0 20px 0;
+            }
+            
+            @include media($md){
+                font-size: 17px;
+                line-height: 25px;
+                margin: 18px 0 10px 0;
+            }
+            
+            @include media($sm){
+                font-size: 15px;
+                line-height: 20px;
+                margin: 18px 0 10px 0;
+
+            }
+
+
+
         }
 
         p {
@@ -68,6 +151,23 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+
+            @include media($lg){
+                font-size: 13px;
+                line-height: 18px;
+            }
+
+            @include media($md){
+                font-size: 12px;
+                line-height: 17px;
+            }
+
+
+            @include media($sm){
+                font-size: 10px;
+                line-height: 15px;
+            }
+
         }
     }
 }

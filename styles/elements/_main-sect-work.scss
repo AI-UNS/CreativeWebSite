@@ -26,7 +26,10 @@
     @include media($xl){
         padding: 50px 90px 90px 150px;
     }
-
+    
+    @include media($lg){
+        padding: 50px 70px 70px 120px;
+    }
 
     span{
         font-size: 13px;
