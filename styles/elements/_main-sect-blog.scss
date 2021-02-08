@@ -5,6 +5,13 @@
         margin-top: 130px;
     }
 
+
+    .blog__campaigns .container {
+        @include media($sm) {
+            flex-wrap: wrap;
+        }
+    }
+
     &__title {
         text-transform: uppercase;
         text-align: center;
@@ -63,7 +70,6 @@
             padding: 0 10px;
             margin: 20px 0;
         }
-
 
 
         h3 {
