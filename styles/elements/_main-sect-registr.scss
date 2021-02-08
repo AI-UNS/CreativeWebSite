@@ -1,52 +1,84 @@
-.registr{
+.registr {
     background: url('../../img/registr-bg.png') no-repeat center / cover;
 
-    &__title{
+    &__title {
         text-align: center;
         padding-top: 225px;
         color: $white;
 
-        h2{
+        @include media($md) {
+            padding-top: 150px;
+        }
+
+        @include media($sm) {
+            padding-top: 100px;
+        }
+
+
+        h2 {
             position: relative;
             text-transform: uppercase;
             font-size: 38px;
+
+            @include media($lg) {
+                font-size: 30px;
+            }
+
+            @include media($md) {
+                font-size: 25px;
+            }
+
+            @include media($sm) {
+                font-size: 18px;
+            }
         }
 
-        img{
+        img {
             position: absolute;
             bottom: 50%;
             transform: translateY(50%) translateX(-50%);
             left: 50%;
+
+            @include media($sm) {
+                width: 100px;
+                height: 150px;
+            }
         }
     }
 
-    &__form{
+    &__form {
         margin-top: 150px;
         width: 100%;
 
-        &-main{
+        &-main {
             width: 100%;
 
-            input{
+            input {
                 background: transparent;
                 border: 1px solid $white;
-                width: 33.3%;
+                width: 33.333%;
                 padding: 20px;
                 margin: 0 14px;
                 font-size: 15px;
                 color: $white;
+
+                @include media($sm) {
+                    margin: 0 5px;
+                    font-size: 12px;
+                }
+
             }
 
-            input::placeholder{
+            input::placeholder {
                 color: $white;
             }
         }
 
-        &-message{
+        &-message {
             margin-top: 40px;
             width: 100%;
-            
-            textarea{
+
+            textarea {
                 resize: none;
                 background: transparent;
                 border: 1px solid $white;
@@ -55,22 +87,45 @@
                 height: 150px;
                 padding: 20px;
                 color: $white;
+
+                @include media($sm) {
+                    margin: 0 5px;
+                    font-size: 12px;
+                }
+
             }
 
-            textarea::placeholder{
+            textarea::placeholder {
                 font-size: 15px;
                 color: $white;
+
+                @include media($sm) {
+                    font-size: 12px;
+                }
+
             }
         }
 
-        button{
-            margin-top: 50px;
+        button {
+            margin: 50px 0 100px 0;
             background: $blue;
-            padding: 20px 60px;
-            border: 0;
             color: $white;
+            border: 0;
+            padding: 20px 60px;
             font-size: 24px;
-            margin-bottom: 100px;
+
+            @include media($md) {
+                margin: 40px 0 80px 0;
+                padding: 18px 44px;
+                font-size: 20px;
+            }
+
+            @include media($sm) {
+                margin: 20px 0 40px 0;
+                padding: 15px 35px;
+                font-size: 15px;
+            }
+
         }
     }
 }
